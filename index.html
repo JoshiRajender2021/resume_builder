@@ -1,0 +1,1342 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rajender Joshi | Software Engineer</title>
+    <meta name="description" content="Portfolio of Rajender Joshi — MERN/MEAN Software Engineer." />
+    <meta name="theme-color" content="#0b1020" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Background effects -->
+    <div class="bg">
+        <div class="orb orb1" aria-hidden="true"></div>
+        <div class="orb orb2" aria-hidden="true"></div>
+        <div class="grid" aria-hidden="true"></div>
+        <div class="noise" aria-hidden="true"></div>
+    </div>
+
+    <!-- Skip link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="container header__inner">
+
+            <!-- Brand -->
+            <a class="brand" href="#top" aria-label="Go to top">
+                <span class="brand__logo">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <span class="brand__text">
+                    <span class="brand__name">Rajender Joshi</span>
+                    <span class="brand__role" data-i18n="role">Software Engineer</span>
+                </span>
+            </a>
+
+            <!-- Nav -->
+            <nav class="nav" aria-label="Primary">
+                <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="navMenu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> <span data-i18n="nav_about">About</span></a>
+                    </li>
+                    <li><a href="#skills"><i class="fa-solid fa-bolt"></i> <span
+                                data-i18n="nav_skills">Skills</span></a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> <span
+                                data-i18n="nav_experience">Experience</span></a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> <span
+                                data-i18n="nav_projects">Projects</span></a></li>
+                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> <span
+                                data-i18n="nav_education">Education</span></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> <span
+                                data-i18n="nav_contact">Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Buttons -->
+            <div class="actions">
+                <button class="chip" id="langToggle" type="button" aria-label="Toggle language">
+                    <i class="fa-solid fa-language"></i>
+                    <span class="chip__text" id="langLabel">EN</span>
+                </button>
+
+                <button class="chip" id="themeToggle" type="button" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon" id="themeIconFA"></i>
+                    <span class="chip__text" id="themeLabel" data-i18n="theme_dark">Dark</span>
+                </button>
+
+                <!-- <a class="btn btn--primary headerHire" href="#contact">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span data-i18n="cta_hire">Hire Me</span>
+                </a> -->
+                <a class="ctaBtn" href="#contact">
+                    <span class="ctaBtn__icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </span>
+                    <span class="ctaBtn__text" data-i18n="cta_hire">Hire Me</span>
+                    <span class="ctaBtn__shine"></span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__left reveal">
+                    <div class="kicker">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span data-i18n="hero_kicker">Building fast, scalable web products.</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        <span data-i18n="hero_title_1">Hi, I’m</span>
+                        <span class="accent">Rajender Joshi</span>
+                        <span class="hero__title__line" data-i18n="hero_title_2">— I craft delightful interfaces &
+                            reliable systems.</span>
+                    </h1>
+
+                    <p class="hero__subtitle" data-i18n="hero_subtitle">
+                        MERN/MEAN Software Engineer specializing in React, Angular, Node.js, TypeScript,
+                        microfrontends, microservices, and dynamic UI systems.
+                    </p>
+
+                    <div class="hero__meta">
+                        <div class="meta-pill"><i class="fa-solid fa-location-dot"></i> <span
+                                data-i18n="meta_location">Noida, India</span></div>
+                        <div class="meta-pill"><i class="fa-solid fa-clock"></i> <span data-i18n="meta_exp">Software
+                                Engineer (Apr 2022 – Present)</span></div>
+                    </div>
+
+                    <div class="hero__cta">
+                        <a class="btn btn--primary" href="#projects"><i class="fa-solid fa-eye"></i> <span
+                                data-i18n="cta_view_work">View Work</span></a>
+                        <a class="btn btn--ghost" href="#contact"><i class="fa-solid fa-message"></i> <span
+                                data-i18n="cta_contact">Contact</span></a>
+                    </div>
+
+                    <div class="hero__chips">
+                        <span class="tag"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tag"><i class="fa-brands fa-angular"></i> Angular</span>
+                        <span class="tag"><i class="fa-solid fa-n"></i> Next.js</span>
+                        <span class="tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tag"><i class="fa-solid fa-code"></i> TypeScript</span>
+                        <span class="tag"><i class="fa-solid fa-layer-group"></i> Microfrontends</span>
+                        <span class="tag"><i class="fa-solid fa-sitemap"></i> Microservices</span>
+                    </div>
+                </div>
+
+                <div class="hero__right reveal">
+                    <div class="heroCard">
+                        <div class="heroCard__top">
+                            <div class="statusDot"></div>
+                            <div class="heroCard__title"><i class="fa-solid fa-circle-check"></i> <span
+                                    data-i18n="hero_card_title">Available for Projects</span></div>
+                        </div>
+
+                        <div class="heroCard__body">
+                            <div class="stat">
+                                <div class="stat__num"><i class="fa-solid fa-chart-line"></i> 3+</div>
+                                <div class="stat__label" data-i18n="stat_years">Years building modern web apps</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat__num"><i class="fa-solid fa-cubes"></i> MEAN</div>
+                                <div class="stat__label" data-i18n="stat_stack_1">Angular + Node + MongoDB</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat__num"><i class="fa-solid fa-layer-group"></i> MERN</div>
+                                <div class="stat__label" data-i18n="stat_stack_2">React/Next + Node + MongoDB</div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="miniTimeline">
+                                <div class="miniTimeline__item"><span class="miniTimeline__dot"></span> <span
+                                        data-i18n="mini_1">Design systems across microfrontends</span></div>
+                                <div class="miniTimeline__item"><span class="miniTimeline__dot"></span> <span
+                                        data-i18n="mini_2">Dynamic UI rendering via DB configs</span></div>
+                                <div class="miniTimeline__item"><span class="miniTimeline__dot"></span> <span
+                                        data-i18n="mini_3">CI/CD + Cloud (AWS, Azure)</span></div>
+                            </div>
+
+                            <a class="btn btn--glass w-100" href="#experience"><i class="fa-solid fa-arrow-right"></i>
+                                <span data-i18n="cta_explore">Explore Experience</span></a>
+                        </div>
+                    </div>
+
+                    <div class="scrollHint">
+                        <span class="scrollHint__mouse"></span>
+                        <span class="scrollHint__text"><i class="fa-solid fa-arrow-down"></i> <span
+                                data-i18n="scroll_hint">Scroll</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2 class="section__title"><i class="fa-solid fa-user"></i> <span
+                            data-i18n="about_title">About</span></h2>
+                    <p class="section__sub" data-i18n="about_sub">I build scalable web apps with strong UX, clean
+                        architecture, and performance-first thinking.</p>
+                </div>
+
+                <div class="grid2">
+                    <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front card">
+                                <h3 class="card__title"><i class="fa-solid fa-wand-magic-sparkles"></i> <span
+                                        data-i18n="about_card_title">What I do</span></h3>
+                                <p class="card__text" data-i18n="about_text">
+                                    I engineer and maintain scalable web applications using MERN/MEAN stacks, create
+                                    reusable
+                                    component libraries/design systems, and integrate REST APIs.
+                                </p>
+                                <div class="flip-hint">
+                                    <i class="fa-solid fa-arrow-rotate-right"></i> Hover to see details
+                                </div>
+                            </div>
+                            <div class="flip-card-back card">
+                                <h3 class="card__title"><i class="fa-solid fa-list-check"></i> <span>Key Focus</span>
+                                </h3>
+                                <div class="bullets">
+                                    <div class="bullet"><i class="fa-solid fa-diagram-project"></i> <span
+                                            data-i18n="about_b1">Microfrontend UI architecture & shared design
+                                            systems</span>
+                                    </div>
+                                    <div class="bullet"><i class="fa-solid fa-database"></i> <span
+                                            data-i18n="about_b2">Dynamic
+                                            UI rendering powered by DB configurations</span></div>
+                                    <div class="bullet"><i class="fa-solid fa-gear"></i> <span
+                                            data-i18n="about_b3">State
+                                            management: Redux / NgRx + reactive programming (RxJS)</span></div>
+                                    <div class="bullet"><i class="fa-solid fa-cloud"></i> <span
+                                            data-i18n="about_b4">Testing
+                                            (Jest) + CI/CD + AWS/Azure deployments</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front card">
+                                <h3 class="card__title"><i class="fa-solid fa-star"></i> <span
+                                        data-i18n="highlights_title">Highlights</span></h3>
+
+                                <div class="highlights">
+                                    <div class="highlight">
+                                        <div class="highlight__icon"><i class="fa-solid fa-layer-group"></i></div>
+                                        <div>
+                                            <div class="highlight__title" data-i18n="h1_title">Design Systems</div>
+                                            <div class="highlight__text" data-i18n="h1_text">Shared component libraries
+                                                for
+                                                consistent UI across teams.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="highlight">
+                                        <div class="highlight__icon"><i class="fa-solid fa-bolt"></i></div>
+                                        <div>
+                                            <div class="highlight__title" data-i18n="h2_title">Performance</div>
+                                            <div class="highlight__text" data-i18n="h2_text">Fast, responsive interfaces
+                                                and
+                                                scalable backend patterns.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="highlight">
+                                        <div class="highlight__icon"><i class="fa-solid fa-brain"></i></div>
+                                        <div>
+                                            <div class="highlight__title" data-i18n="h3_title">AI + SaaS</div>
+                                            <div class="highlight__text" data-i18n="h3_text">Contract intelligence &
+                                                spend
+                                                optimization platforms.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-hint">
+                                    <i class="fa-solid fa-arrow-rotate-right"></i> Contact Info
+                                </div>
+                            </div>
+                            <div class="flip-card-back card">
+                                <h3 class="card__title"><i class="fa-solid fa-address-card"></i> <span>Contact
+                                        Details</span></h3>
+                                <div class="statsRow">
+                                    <div class="statCard">
+                                        <div class="statCard__k"><i class="fa-solid fa-location-dot"></i> <span
+                                                data-i18n="stat_k1">Location</span></div>
+                                        <div class="statCard__v">Noida, India</div>
+                                    </div>
+                                    <!-- <div class="statCard">
+                                        <div class="statCard__k"><i class="fa-solid fa-phone"></i> <span
+                                                data-i18n="stat_k2">Phone</span></div>
+                                        <div class="statCard__v">7409224867</div>
+                                    </div> -->
+                                    <div class="statCard">
+                                        <div class="statCard__k"><i class="fa-solid fa-envelope"></i> <span
+                                                data-i18n="stat_k3">Email</span></div>
+                                        <div class="statCard__v"><a
+                                                href="mailto:rajender.joshi1uitpe@gmail.com">rajender.joshi1uitpe@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="note"><i class="fa-solid fa-circle-info"></i> <span
+                                        data-i18n="about_note">Tip:
+                                        Replace the email/phone if you want a client-facing version.</span></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2 class="section__title"><i class="fa-solid fa-bolt"></i> <span
+                            data-i18n="skills_title">Skills</span></h2>
+                    <p class="section__sub" data-i18n="skills_sub">Tools and technologies I use to ship production-grade
+                        products.</p>
+                </div>
+
+                <div class="skills-container">
+                    <!-- Frontend Carousel -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category__title"><i class="fa-solid fa-palette"></i> <span
+                                data-i18n="skills_frontend">Frontend</span></h3>
+                        <div class="skill-row">
+                            <!-- HTML5 -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                                        <span class="skill-name">HTML5</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Semantic structure & accessibility standards.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CSS3 -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                                        <span class="skill-name">CSS3</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Flexbox, Grid, Animations & Responsive Design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SCSS -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-sass skill-icon" style="color: #CC6699;"></i>
+                                        <span class="skill-name">SCSS</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Modular styles, mixins & nested rules.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- JS -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                                        <span class="skill-name">JavaScript</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">ES6+, Async/Await & DOM manipulation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TS -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-code skill-icon" style="color: #3178C6;"></i>
+                                        <span class="skill-name">TypeScript</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Type safety, Interfaces & Generics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- React -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-react skill-icon" style="color: #61DAFB;"></i>
+                                        <span class="skill-name">React.js</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Hooks, Context API & Custom Reusable Components.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Next -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-n skill-icon" style="color: white;"></i>
+                                        <span class="skill-name">Next.js</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">SSR, SSG & API Routes for SEO.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Angular -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-angular skill-icon" style="color: #DD0031;"></i>
+                                        <span class="skill-name">Angular</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Modules, Services, DI & RxJS Pipelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Redux -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-cubes skill-icon" style="color: #764ABC;"></i>
+                                        <span class="skill-name">Redux</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Global State Management & Flux Architecture.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Carousel -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category__title"><i class="fa-solid fa-server"></i> <span
+                                data-i18n="skills_backend">Backend</span></h3>
+                        <div class="skill-row">
+                            <!-- Node -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-node-js skill-icon" style="color: #339933;"></i>
+                                        <span class="skill-name">Node.js</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Event-driven runtime for scalable networking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Express -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-route skill-icon" style="color: white;"></i>
+                                        <span class="skill-name">Express</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Middleware, Routing & REST API creation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nest -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-shield-halved skill-icon" style="color: #E0234E;"></i>
+                                        <span class="skill-name">Nest.js</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Modular architecture for enterprise Node apps.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mongo -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-database skill-icon" style="color: #47A248;"></i>
+                                        <span class="skill-name">MongoDB</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">NoSQL schema design & Aggregation pipelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Firebase -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-fire skill-icon" style="color: #FFCA28;"></i>
+                                        <span class="skill-name">Firebase</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Auth, Firestore & Realtime Sync.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Carousel -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category__title"><i class="fa-solid fa-pen-ruler"></i> <span
+                                data-i18n="skills_ui">UI / UX</span></h3>
+                        <div class="skill-row">
+                            <!-- Tailwind -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-wind skill-icon" style="color: #38B2AC;"></i>
+                                        <span class="skill-name">Tailwind</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Utility-first CSS for rapid UI development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MUI -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-paintbrush skill-icon" style="color: #0081CB;"></i>
+                                        <span class="skill-name">MUI</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Google Material Design React components.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Figma -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-figma skill-icon" style="color: #F24E1E;"></i>
+                                        <span class="skill-name">Figma</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">High-fidelity prototyping & Design Handoffs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Carousel -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category__title"><i class="fa-solid fa-toolbox"></i> <span
+                                data-i18n="skills_tools">Tools</span></h3>
+                        <div class="skill-row">
+                            <!-- Git -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
+                                        <span class="skill-name">Git</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Version control, branching & merging strategies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CI/CD -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-solid fa-arrows-rotate skill-icon" style="color: #4CAF50;"></i>
+                                        <span class="skill-name">CI/CD</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">Automated testing & deployment pipelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AWS -->
+                            <div class="skill-flip-card">
+                                <div class="skill-flip-inner">
+                                    <div class="skill-flip-front">
+                                        <i class="fa-brands fa-aws skill-icon" style="color: #FF9900;"></i>
+                                        <span class="skill-name">AWS</span>
+                                    </div>
+                                    <div class="skill-flip-back">
+                                        <p class="skill-desc">S3, EC2, Lambda & Cloud infrastructure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2 class="section__title"><i class="fa-solid fa-briefcase"></i> <span
+                            data-i18n="exp_title">Experience</span></h2>
+                    <p class="section__sub" data-i18n="exp_sub">Roles and responsibilities focused on performance,
+                        scalability, and clean architecture.</p>
+                </div>
+
+                <div class="experience-card reveal">
+                    <div class="exp-card__header">
+                        <div class="exp-card__logo">
+                            <i class="fa-solid fa-a algo-logo"></i>
+                        </div>
+                        <div class="exp-card__info">
+                            <h3 class="exp-card__role"><i class="fa-solid fa-user-tie"></i> Software Engineer</h3>
+                            <div class="exp-card__company">Algoworks Technologies Pvt. Ltd.</div>
+                            <div class="exp-card__meta">
+                                <span><i class="fa-solid fa-calendar-days"></i> Apr 2022 – Present</span>
+                                <span class="separator">•</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Noida, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card__body">
+                        <ul class="exp-list">
+                            <li data-i18n="exp_1">Engineered and maintained scalable web apps using MERN/MEAN stacks.
+                            </li>
+                            <li data-i18n="exp_2">Built shared component library & design system across microfrontends.
+                            </li>
+                            <li data-i18n="exp_3">Implemented DB-config driven dynamic UI rendering for real-time
+                                updates.</li>
+                            <li data-i18n="exp_4">Integrated REST APIs across React/Angular/Next.js and
+                                Node/Express/Nest.</li>
+                            <li data-i18n="exp_5">Advanced state management with Redux; reactive patterns with RxJS.
+                            </li>
+                            <li data-i18n="exp_6">Unit testing (Jest), CI/CD, and cloud deployments on AWS/Azure.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card__footer">
+                        <span class="exp-pill">Angular</span>
+                        <span class="exp-pill">React</span>
+                        <span class="exp-pill">Node.js</span>
+                        <span class="exp-pill">TypeScript</span>
+                        <span class="exp-pill">AWS</span>
+                        <span class="exp-pill">Microservices</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2 class="section__title"><i class="fa-solid fa-layer-group"></i> <span
+                            data-i18n="proj_title">Projects</span></h2>
+                    <p class="section__sub" data-i18n="proj_sub">A curated selection of products I’ve built across web
+                        platforms and SaaS ecosystems.</p>
+                </div>
+
+                <div class="reveal projects-wrapper">
+                    <button class="nav-arrow prev" id="projPrev" aria-label="Previous Project"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="projects-carousel" id="projCarousel">
+                        <!-- Project 1: Food Delivery -->
+                        <div class="project-flip-card">
+                            <div class="project-flip-inner">
+                                <div class="project-flip-front">
+                                    <i class="fa-solid fa-burger project-icon"></i>
+                                    <h3 class="project-flip-title" data-i18n="p1_title">Food Delivery App</h3>
+                                    <div class="project-flip-subtitle">Angular · RxJS</div>
+                                </div>
+                                <div class="project-flip-back">
+                                    <p class="project-desc" data-i18n="p1_desc">Online platform for fresh, healthy meals
+                                        prepared by neighbors; optimized UI and performance in Angular.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Angular</span>
+                                        <span class="tag">RxJS</span>
+                                        <span class="tag">NgRx</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: SaaS Info -->
+                        <div class="project-flip-card">
+                            <div class="project-flip-inner">
+                                <div class="project-flip-front">
+                                    <i class="fa-solid fa-calendar-check project-icon"></i>
+                                    <h3 class="project-flip-title" data-i18n="p2_title">SaaS Info App</h3>
+                                    <div class="project-flip-subtitle">React · Redux</div>
+                                </div>
+                                <div class="project-flip-back">
+                                    <p class="project-desc" data-i18n="p2_desc">Schedule-based information delivery to
+                                        boost engagement; built a responsive, high-performance React UI.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Redux Toolkit</span>
+                                        <span class="tag">Saga</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Fish Tracking -->
+                        <div class="project-flip-card">
+                            <div class="project-flip-inner">
+                                <div class="project-flip-front">
+                                    <i class="fa-solid fa-fish project-icon"></i>
+                                    <h3 class="project-flip-title" data-i18n="p3_title">Fish Tracking App</h3>
+                                    <div class="project-flip-subtitle">Node · MongoDB</div>
+                                </div>
+                                <div class="project-flip-back">
+                                    <p class="project-desc" data-i18n="p3_desc">Backend platform for tracking fish
+                                        catches and marketplace operations; optimized APIs and system performance.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">Express</span>
+                                        <span class="tag">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Real Estate -->
+                        <div class="project-flip-card">
+                            <div class="project-flip-inner">
+                                <div class="project-flip-front">
+                                    <i class="fa-solid fa-building project-icon"></i>
+                                    <h3 class="project-flip-title" data-i18n="p4_title">Real Estate Portfolio</h3>
+                                    <div class="project-flip-subtitle">Microfrontends</div>
+                                </div>
+                                <div class="project-flip-back">
+                                    <p class="project-desc" data-i18n="p4_desc">Track investments: depreciation, loans,
+                                        refinancing; microfrontend architecture with microservices backend.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Microfrontends</span>
+                                        <span class="tag">Microservices</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: Tower Billing -->
+                        <div class="project-flip-card">
+                            <div class="project-flip-inner">
+                                <div class="project-flip-front">
+                                    <i class="fa-solid fa-file-invoice-dollar project-icon"></i>
+                                    <h3 class="project-flip-title" data-i18n="p5_title">Tower Billing App</h3>
+                                    <div class="project-flip-subtitle">MEAN Stack</div>
+                                </div>
+                                <div class="project-flip-back">
+                                    <p class="project-desc" data-i18n="p5_desc">Automates billing and invoicing for
+                                        tower operators; microfrontend + microservices architecture using MEAN stack.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">Angular</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">MEAN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: AI Contract -->
+                        <div class="project-flip-card">
+                            <div class="project-flip-inner">
+                                <div class="project-flip-front">
+                                    <i class="fa-solid fa-brain project-icon"></i>
+                                    <h3 class="project-flip-title" data-i18n="p6_title">AI Contract Intel</h3>
+                                    <div class="project-flip-subtitle">Next.js · AI</div>
+                                </div>
+                                <div class="project-flip-back">
+                                    <p class="project-desc" data-i18n="p6_desc">Extracts actionable insights from
+                                        contracts/spend data; dynamic UI via DB configs; microfrontend web app.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Next.js</span>
+                                        <span class="tag">Dynamic UI</span>
+                                        <span class="tag">Microservices</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-arrow next" id="projNext" aria-label="Next Project"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="center reveal">
+                    <a class="btn btn--ghost" href="#contact"><i class="fa-solid fa-handshake"></i> <span
+                            data-i18n="proj_cta">Want similar work? Let’s talk.</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2 class="section__title"><i class="fa-solid fa-graduation-cap"></i> <span
+                            data-i18n="edu_title">Education & Certifications</span></h2>
+                    <p class="section__sub" data-i18n="edu_sub">Academic background and certifications that reinforce my
+                        fundamentals.</p>
+                </div>
+
+                <div class="grid2">
+                    <div class="card reveal">
+                        <h3 class="card__title"><i class="fa-solid fa-school"></i> <span data-i18n="edu_degree">Bachelor
+                                of Technology</span></h3>
+                        <p class="card__text">
+                            <strong><i class="fa-solid fa-building-columns"></i> Uttarakhand Technical
+                                University</strong> · Uttarakhand, India
+                            <br />
+                            <span data-i18n="edu_duration">July 2015 – July 2019 · Percentage: 67%</span>
+                        </p>
+                    </div>
+
+                    <div class="card reveal">
+                        <h3 class="card__title"><i class="fa-solid fa-certificate"></i> <span
+                                data-i18n="cert_title">Certifications</span></h3>
+                        <ul class="list compact">
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="c1">JavaScript & Advanced
+                                    JavaScript</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="c2">TypeScript & Advanced
+                                    TypeScript</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="c3">MongoDB</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="c4">Front-End Web Development</span>
+                            </li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="c5">MERN Stack Development</span>
+                            </li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="c6">MEAN Stack Development</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contactWrap">
+                    <div class="contactLeft reveal">
+                        <h2 class="section__title"><i class="fa-solid fa-paper-plane"></i> <span
+                                data-i18n="contact_title">Let’s build something amazing</span></h2>
+                        <p class="section__sub" data-i18n="contact_sub">Share your idea — I’ll help you turn it into a
+                            polished, production-ready product.</p>
+
+                        <div class="contactCards">
+                            <a class="contactCard" href="mailto:rajender.joshi1uitpe@gmail.com">
+                                <span class="contactCard__icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span>
+                                    <span class="contactCard__label" data-i18n="contact_email">Email</span>
+                                    <span class="contactCard__value">rajender.joshi1uitpe@gmail.com</span>
+                                </span>
+                            </a>
+
+                            <!-- <a class="contactCard" href="tel:+917409224867">
+                                <span class="contactCard__icon"><i class="fa-solid fa-phone"></i></span>
+                                <span>
+                                    <span class="contactCard__label" data-i18n="contact_phone">Phone</span>
+                                    <span class="contactCard__value">+91 7409224867</span>
+                                </span>
+                            </a> -->
+
+                            <div class="contactCard" role="group" aria-label="Location">
+                                <span class="contactCard__icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <span>
+                                    <span class="contactCard__label" data-i18n="contact_location">Location</span>
+                                    <span class="contactCard__value">Noida, India</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <form class="contactForm card reveal" onsubmit="return false" aria-label="Contact form">
+                        <div class="formRow">
+                            <label>
+                                <span><i class="fa-solid fa-user"></i> <span data-i18n="f_name">Name</span></span>
+                                <input type="text" placeholder="Your name" data-i18n-ph="ph_name" />
+                            </label>
+                            <label>
+                                <span><i class="fa-solid fa-envelope"></i> <span data-i18n="f_email">Email</span></span>
+                                <input type="email" placeholder="your@email.com" data-i18n-ph="ph_email" />
+                            </label>
+                        </div>
+
+                        <label>
+                            <span><i class="fa-solid fa-tag"></i> <span data-i18n="f_subject">Subject</span></span>
+                            <input type="text" placeholder="Project inquiry" data-i18n-ph="ph_subject" />
+                        </label>
+
+                        <label>
+                            <span><i class="fa-solid fa-message"></i> <span data-i18n="f_message">Message</span></span>
+                            <textarea rows="5" placeholder="Tell me about your project..."
+                                data-i18n-ph="ph_message"></textarea>
+                        </label>
+
+                        <button class="btn btn--primary" type="button" id="fakeSend">
+                            <i class="fa-solid fa-paper-plane"></i> <span data-i18n="f_send">Send Message</span>
+                        </button>
+                    </form> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer__left">
+                    <div class="footer__brand">
+                        <span class="brand__logo"><i class="fa-solid fa-code"></i></span>
+                        <span><strong>Rajender Joshi</strong> · <span data-i18n="role">Software Engineer</span></span>
+                    </div>
+                    <div class="footer__muted"><i class="fa-solid fa-heart"></i> <span data-i18n="footer_note">Crafted
+                            with performance, accessibility, and clean design.</span></div>
+                </div>
+
+                <div class="footer__right">
+                    <a class="footer__link" href="#top"><i class="fa-solid fa-arrow-up"></i> <span
+                            data-i18n="back_to_top">Back to top ↑</span></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Floating quick actions -->
+    <div class="fab">
+        <a class="fab__btn" href="#contact" aria-label="Contact"><i class="fa-solid fa-comment-dots"></i></a>
+        <button class="fab__btn" id="scrollTop" type="button" aria-label="Scroll to top"><i
+                class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <script>
+        const root = document.documentElement;
+        const qs = (s, el = document) => el.querySelector(s);
+        const qsa = (s, el = document) => Array.from(el.querySelectorAll(s));
+
+        // ---------------------------
+        // i18n dictionary (same as before)
+        // ---------------------------
+        const i18n = {
+            en: {
+                role: "Software Engineer",
+                nav_about: "About",
+                nav_skills: "Skills",
+                nav_experience: "Experience",
+                nav_projects: "Projects",
+                nav_education: "Education",
+                nav_contact: "Contact",
+                cta_hire: "Hire Me",
+                hero_kicker: "Building fast, scalable web products.",
+                hero_title_1: "Hi, I’m",
+                hero_title_2: "— I craft delightful interfaces & reliable systems.",
+                hero_subtitle:
+                    "MERN/MEAN Software Engineer specializing in React, Angular, Node.js, TypeScript, microfrontends, microservices, and dynamic UI systems.",
+                meta_location: "Noida, India",
+                meta_exp: "Software Engineer (Apr 2022 – Present)",
+                cta_view_work: "View Work",
+                cta_contact: "Contact",
+                hero_card_title: "Available for Projects",
+                stat_years: "Years building modern web apps",
+                stat_stack_1: "Angular + Node + MongoDB",
+                stat_stack_2: "React/Next + Node + MongoDB",
+                mini_1: "Design systems across microfrontends",
+                mini_2: "Dynamic UI rendering via DB configs",
+                mini_3: "CI/CD + Cloud (AWS, Azure)",
+                cta_explore: "Explore Experience",
+                scroll_hint: "Scroll",
+                about_title: "About",
+                about_sub: "I build scalable web apps with strong UX, clean architecture, and performance-first thinking.",
+                about_card_title: "What I do",
+                about_text:
+                    "I engineer and maintain scalable web applications using MERN/MEAN stacks, create reusable component libraries/design systems, and integrate REST APIs across React/Angular/Next and Node/Nest backends.",
+                about_b1: "Microfrontend UI architecture & shared design systems",
+                about_b2: "Dynamic UI rendering powered by DB configurations",
+                about_b3: "State management: Redux / NgRx + reactive programming (RxJS)",
+                about_b4: "Testing (Jest) + CI/CD + AWS/Azure deployments",
+                highlights_title: "Highlights",
+                h1_title: "Design Systems",
+                h1_text: "Shared component libraries for consistent UI across teams.",
+                h2_title: "Performance",
+                h2_text: "Fast, responsive interfaces and scalable backend patterns.",
+                h3_title: "AI + SaaS",
+                h3_text: "Contract intelligence & spend optimization platforms.",
+                stat_k1: "Location",
+                stat_k2: "Phone",
+                stat_k3: "Email",
+                about_note: "Tip: Replace the email/phone if you want a client-facing version.",
+                skills_title: "Skills",
+                skills_sub: "Tools and technologies I use to ship production-grade products.",
+                skills_frontend: "Frontend",
+                skills_backend: "Backend",
+                skills_ui: "UI / UX",
+                skills_tools: "Tools",
+                exp_title: "Experience",
+                exp_sub: "Roles and responsibilities focused on performance, scalability, and clean architecture.",
+                exp_1: "Engineered and maintained scalable web apps using MERN/MEAN stacks.",
+                exp_2: "Built shared component library & design system across microfrontends.",
+                exp_3: "Implemented DB-config driven dynamic UI rendering for real-time updates.",
+                exp_4: "Integrated REST APIs across React/Angular/Next.js and Node/Express/Nest.",
+                exp_5: "Advanced state management with Redux; reactive patterns with RxJS.",
+                exp_6: "Unit testing (Jest), CI/CD, and cloud deployments on AWS/Azure.",
+                proj_title: "Projects",
+                proj_sub: "A curated selection of products I’ve built across web platforms and SaaS ecosystems.",
+                p1_title: "Food Delivery Based Application",
+                p1_desc:
+                    "Online platform for fresh, healthy meals prepared by neighbors; optimized UI and performance in Angular.",
+                p2_title: "SaaS Information Delivery App",
+                p2_desc:
+                    "Schedule-based information delivery to boost engagement; built a responsive, high-performance React UI.",
+                p3_title: "Fish Catches Tracking App",
+                p3_desc:
+                    "Backend platform for tracking fish catches and marketplace operations; optimized APIs and system performance.",
+                p4_title: "SaaS Real Estate Portfolio Management",
+                p4_desc:
+                    "Track investments: depreciation, loans, refinancing; microfrontend architecture with microservices backend.",
+                p5_title: "SaaS Tower Billing Application",
+                p5_desc:
+                    "Automates billing and invoicing for tower operators; microfrontend + microservices architecture using MEAN stack.",
+                p6_title: "AI Contract Intelligence & Spend Optimization (SaaS)",
+                p6_desc:
+                    "Extracts actionable insights from contracts/spend data; dynamic UI via DB configs; microfrontend web app + microservices backend.",
+                proj_cta: "Want similar work? Let’s talk.",
+                edu_title: "Education & Certifications",
+                edu_sub: "Academic background and certifications that reinforce my fundamentals.",
+                edu_degree: "Bachelor of Technology",
+                edu_duration: "July 2015 – July 2019 · Percentage: 67%",
+                cert_title: "Certifications",
+                c1: "JavaScript & Advanced JavaScript",
+                c2: "TypeScript & Advanced TypeScript",
+                c3: "MongoDB",
+                c4: "Front-End Web Development",
+                c5: "MERN Stack Development",
+                c6: "MEAN Stack Development",
+                contact_title: "Let’s build something amazing",
+                contact_sub: "Share your idea — I’ll help you turn it into a polished, production-ready product.",
+                contact_email: "Email",
+                contact_phone: "Phone",
+                contact_location: "Location",
+                f_name: "Name",
+                f_email: "Email",
+                f_subject: "Subject",
+                f_message: "Message",
+                f_send: "Send Message",
+                form_note: "This is a demo form (no backend). Connect EmailJS / Formspree / your API to make it live.",
+                footer_note: "Crafted with performance, accessibility, and clean design.",
+                back_to_top: "Back to top ↑",
+                theme_dark: "Dark",
+                theme_light: "Light",
+                ph_name: "Your name",
+                ph_email: "your@email.com",
+                ph_subject: "Project inquiry",
+                ph_message: "Tell me about your project..."
+            },
+
+            hi: {
+                role: "सॉफ्टवेयर इंजीनियर",
+                nav_about: "परिचय",
+                nav_skills: "कौशल",
+                nav_experience: "अनुभव",
+                nav_projects: "प्रोजेक्ट्स",
+                nav_education: "शिक्षा",
+                nav_contact: "संपर्क",
+                cta_hire: "हायर करें",
+                hero_kicker: "तेज़ और स्केलेबल वेब प्रोडक्ट्स बनाता हूँ।",
+                hero_title_1: "नमस्ते, मैं",
+                hero_title_2: "— शानदार UI और भरोसेमंद सिस्टम बनाता हूँ।",
+                hero_subtitle:
+                    "MERN/MEAN सॉफ्टवेयर इंजीनियर: React, Angular, Node.js, TypeScript, microfrontends, microservices और dynamic UI systems में विशेषज्ञ।",
+                meta_location: "नोएडा, भारत",
+                meta_exp: "सॉफ्टवेयर इंजीनियर (अप्रैल 2022 – वर्तमान)",
+                cta_view_work: "मेरा काम देखें",
+                cta_contact: "संपर्क करें",
+                hero_card_title: "प्रोजेक्ट्स के लिए उपलब्ध",
+                stat_years: "सालों से मॉडर्न वेब ऐप्स",
+                stat_stack_1: "Angular + Node + MongoDB",
+                stat_stack_2: "React/Next + Node + MongoDB",
+                mini_1: "Microfrontends के लिए design systems",
+                mini_2: "DB configs से dynamic UI rendering",
+                mini_3: "CI/CD + Cloud (AWS, Azure)",
+                cta_explore: "अनुभव देखें",
+                scroll_hint: "स्क्रॉल करें",
+                about_title: "परिचय",
+                about_sub: "मैं मजबूत UX, साफ आर्किटेक्चर और performance-first सोच के साथ scalable web apps बनाता हूँ।",
+                about_card_title: "मैं क्या करता हूँ",
+                about_text:
+                    "मैं MERN/MEAN stacks पर scalable web applications बनाता/मेंटेन करता हूँ, reusable component libraries/design systems बनाता हूँ और React/Angular/Next तथा Node/Nest backends के बीच REST APIs integrate करता हूँ।",
+                about_b1: "Microfrontend UI architecture और shared design systems",
+                about_b2: "DB configurations से dynamic UI rendering",
+                about_b3: "State management: Redux / NgRx और reactive programming (RxJS)",
+                about_b4: "Testing (Jest) + CI/CD + AWS/Azure deployments",
+                highlights_title: "हाइलाइट्स",
+                h1_title: "Design Systems",
+                h1_text: "टीमों में consistent UI के लिए shared component libraries।",
+                h2_title: "Performance",
+                h2_text: "Fast UI और scalable backend patterns।",
+                h3_title: "AI + SaaS",
+                h3_text: "Contract intelligence और spend optimization platforms।",
+                stat_k1: "लोकेशन",
+                stat_k2: "फोन",
+                stat_k3: "ईमेल",
+                about_note: "टिप: क्लाइंट-फेसिंग वर्ज़न के लिए email/phone बदल सकते हैं।",
+                skills_title: "कौशल",
+                skills_sub: "Production-grade products deliver करने के लिए मेरी tech stack।",
+                skills_frontend: "Frontend",
+                skills_backend: "Backend",
+                skills_ui: "UI / UX",
+                skills_tools: "Tools",
+                exp_title: "अनुभव",
+                exp_sub: "Performance, scalability और clean architecture पर केंद्रित भूमिका।",
+                exp_1: "MERN/MEAN stacks पर scalable web apps develop और maintain किए।",
+                exp_2: "Microfrontends के लिए shared component library और design system बनाया।",
+                exp_3: "Real-time updates के लिए DB-config driven dynamic UI rendering implement किया।",
+                exp_4: "React/Angular/Next.js और Node/Express/Nest के बीच REST APIs integrate किए।",
+                exp_5: "Redux और RxJS के साथ advanced state management और reactive patterns।",
+                exp_6: "Jest testing, CI/CD और AWS/Azure पर deployments।",
+                proj_title: "प्रोजेक्ट्स",
+                proj_sub: "वेब प्लेटफॉर्म और SaaS इकोसिस्टम में मेरे कुछ प्रमुख प्रोजेक्ट्स।",
+                p1_title: "फूड डिलीवरी आधारित ऐप",
+                p1_desc:
+                    "पड़ोसियों द्वारा बनाए गए fresh meals का प्लेटफॉर्म; Angular में UI और performance optimize किया।",
+                p2_title: "SaaS इंफॉर्मेशन डिलीवरी ऐप",
+                p2_desc:
+                    "Scheduled time पर information delivery; React UI को responsive और fast बनाया।",
+                p3_title: "फिश कैच ट्रैकिंग ऐप",
+                p3_desc:
+                    "Fish catches व marketplace ऑपरेशन्स के लिए backend; efficient APIs और performance पर फोकस।",
+                p4_title: "SaaS रियल एस्टेट पोर्टफोलियो मैनेजमेंट",
+                p4_desc:
+                    "Depreciation, loan, refinancing tracking; microfrontend + microservices architecture।",
+                p5_title: "SaaS टॉवर बिलिंग ऐप",
+                p5_desc:
+                    "Tower operators के billing/invoicing को automate किया; MEAN stack पर microfrontend + microservices।",
+                p6_title: "AI कॉन्ट्रैक्ट इंटेलिजेंस & Spend Optimization (SaaS)",
+                p6_desc:
+                    "Contracts/spend data से insights; DB configs से dynamic UI; microfrontend web app + microservices backend।",
+                proj_cta: "ऐसा ही काम चाहिए? बात करते हैं।",
+                edu_title: "शिक्षा और प्रमाणपत्र",
+                edu_sub: "मेरी academic background और certifications।",
+                edu_degree: "बैचलर ऑफ टेक्नोलॉजी",
+                edu_duration: "जुलाई 2015 – जुलाई 2019 · प्रतिशत: 67%",
+                cert_title: "प्रमाणपत्र",
+                c1: "JavaScript और Advanced JavaScript",
+                c2: "TypeScript और Advanced TypeScript",
+                c3: "MongoDB",
+                c4: "Front-End Web Development",
+                c5: "MERN Stack Development",
+                c6: "MEAN Stack Development",
+                contact_title: "आइए कुछ शानदार बनाते हैं",
+                contact_sub: "अपना आइडिया बताइए — मैं उसे polished, production-ready product में बदलने में मदद करूंगा।",
+                contact_email: "ईमेल",
+                contact_phone: "फोन",
+                contact_location: "लोकेशन",
+                f_name: "नाम",
+                f_email: "ईमेल",
+                f_subject: "विषय",
+                f_message: "मैसेज",
+                f_send: "मैसेज भेजें",
+                form_note: "यह demo form है (backend नहीं). EmailJS / Formspree / अपनी API जोड़कर live करें।",
+                footer_note: "Performance, accessibility और clean design के साथ बनाया गया।",
+                back_to_top: "ऊपर जाएँ ↑",
+                theme_dark: "डार्क",
+                theme_light: "लाइट",
+                ph_name: "आपका नाम",
+                ph_email: "your@email.com",
+                ph_subject: "प्रोजेक्ट के बारे में",
+                ph_message: "अपने प्रोजेक्ट के बारे में बताइए..."
+            }
+        };
+
+        function applyI18n(lang) {
+            root.setAttribute("data-lang", lang);
+            document.documentElement.lang = lang === "hi" ? "hi" : "en";
+
+            qsa("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (i18n[lang][key]) el.textContent = i18n[lang][key];
+            });
+
+            qsa("[data-i18n-ph]").forEach(el => {
+                const key = el.getAttribute("data-i18n-ph");
+                if (i18n[lang][key]) el.setAttribute("placeholder", i18n[lang][key]);
+            });
+
+            qs("#langLabel").textContent = lang.toUpperCase();
+        }
+
+        function applyTheme(theme) {
+            root.setAttribute("data-theme", theme);
+            const isDark = theme === "dark";
+
+            const iconFA = qs("#themeIconFA");
+            if (iconFA) {
+                iconFA.className = isDark ? "fa-solid fa-moon" : "fa-solid fa-sun";
+            }
+
+            qs("#themeLabel").textContent = isDark ? i18n[root.dataset.lang].theme_dark : i18n[root.dataset.lang].theme_light;
+            metaThemeColor(isDark ? "#0b1020" : "#f7f7ff");
+        }
+
+        function metaThemeColor(color) {
+            let tag = document.querySelector('meta[name="theme-color"]');
+            if (!tag) {
+                tag = document.createElement("meta");
+                tag.setAttribute("name", "theme-color");
+                document.head.appendChild(tag);
+            }
+            tag.setAttribute("content", color);
+        }
+
+        const savedTheme = localStorage.getItem("rj_theme") || "dark";
+        const savedLang = localStorage.getItem("rj_lang") || "en";
+
+        applyI18n(savedLang);
+        applyTheme(savedTheme);
+
+        qs("#themeToggle").addEventListener("click", () => {
+            const next = root.dataset.theme === "dark" ? "light" : "dark";
+            localStorage.setItem("rj_theme", next);
+            applyTheme(next);
+        });
+
+        qs("#langToggle").addEventListener("click", () => {
+            const next = root.dataset.lang === "en" ? "hi" : "en";
+            localStorage.setItem("rj_lang", next);
+            applyI18n(next);
+            applyTheme(root.dataset.theme);
+        });
+
+        // Mobile nav
+        const navToggle = qs("#navToggle");
+        navToggle.addEventListener("click", () => {
+            const open = document.body.classList.toggle("nav-open");
+            navToggle.setAttribute("aria-expanded", String(open));
+        });
+
+        qsa(".nav__menu a").forEach(a => {
+            a.addEventListener("click", () => {
+                document.body.classList.remove("nav-open");
+                navToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        // Scroll spy
+        const sections = qsa("section[id]");
+        const navLinks = qsa(".nav__menu a");
+
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    navLinks.forEach(l => l.classList.toggle("active", l.getAttribute("href") === `#${id}`));
+                }
+            });
+        }, { rootMargin: "-45% 0px -50% 0px", threshold: 0.02 });
+
+        sections.forEach(s => spy.observe(s));
+
+        // Reveal
+        const revealEls = qsa(".reveal");
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add("in");
+                    revealObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealEls.forEach(el => revealObs.observe(el));
+
+        // Smooth scroll offset
+        function scrollWithOffset(target) {
+            const header = document.querySelector(".header");
+            const offset = header ? header.offsetHeight + 10 : 80;
+            const el = document.querySelector(target);
+            if (!el) return;
+            const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+        }
+
+        document.addEventListener("click", (e) => {
+            const a = e.target.closest('a[href^="#"]');
+            if (!a) return;
+            const href = a.getAttribute("href");
+            if (href.length > 1) {
+                e.preventDefault();
+                scrollWithOffset(href);
+            }
+        });
+
+        qs("#scrollTop").addEventListener("click", () => scrollWithOffset("#top"));
+
+        const fab = qs(".fab");
+        window.addEventListener("scroll", () => {
+            const show = window.scrollY > 700;
+            fab.classList.toggle("show", show);
+        });
+
+        qs("#fakeSend").addEventListener("click", () => {
+            const lang = root.dataset.lang;
+            const msg = lang === "hi"
+                ? "धन्यवाद! यह demo form है — backend जोड़ने पर submit होगा।"
+                : "Thanks! This is a demo form — connect a backend to submit.";
+
+            const toast = document.createElement("div");
+            toast.className = "toast";
+            toast.textContent = msg;
+            document.body.appendChild(toast);
+            requestAnimationFrame(() => toast.classList.add("show"));
+            setTimeout(() => {
+                toast.classList.remove("show");
+                setTimeout(() => toast.remove(), 350);
+            }, 2600);
+        });
+
+        // Projects Carousel Navigation
+        const projCarousel = qs("#projCarousel");
+        const projPrev = qs("#projPrev");
+        const projNext = qs("#projNext");
+
+        if (projCarousel && projPrev && projNext) {
+            projPrev.addEventListener("click", () => {
+                projCarousel.scrollBy({ left: -340, behavior: "smooth" });
+            });
+            projNext.addEventListener("click", () => {
+                projCarousel.scrollBy({ left: 340, behavior: "smooth" });
+            });
+        }
+    </script>
+</body>
+
+</html>
